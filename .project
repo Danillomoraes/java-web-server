@@ -30,21 +30,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>WebContent/css/animate.css</name>
-			<type>1</type>
-			<location>/home/danillomoraes/Documents/Projects/CSS Frameworks/animate.css</location>
-		</link>
-		<link>
-			<name>WebContent/script/anime.min.js</name>
-			<type>1</type>
-			<location>/home/danillomoraes/Documents/Projects/JS frameworks/anime-master/anime.min.js</location>
-		</link>
-		<link>
-			<name>WebContent/script/jquery-3.3.1.min.js</name>
-			<type>1</type>
-			<location>/home/danillomoraes/Documents/Projects/nodejs/node-html-server/views/script/jquery-3.3.1.min.js</location>
-		</link>
-		<link>
 			<name>WebContent/WEB-INF/lib/gson-2.8.5.jar</name>
 			<type>1</type>
 			<location>/home/danillomoraes/Documents/Projects/java-libs/gson-2.8.5.jar</location>

@@ -41,6 +41,26 @@
 
 var transY = 10;
 
+var fadeOutA = function(el, callback) {
+	anime({
+		targets:el,
+		translateY: -transY,
+		opacity: 0,
+		duration: 500,
+		complete: callback()
+	});	
+};
+
+var fadeInA = function (el, callback) {
+	anime({
+		targets: el,
+		translateY: transY,
+		opacity: 1,
+		duration: 500,
+		complete: callback()	
+	})
+}
+
 var myTimeline = anime.timeline({
 	diretion: 'alternative'
 });
@@ -75,46 +95,60 @@ var myTimeline = anime.timeline({
 	opacity: 0,
 	duration: 0	
 	});
+	anime({
+		targets:'#btnCadastrar',
+		translateY: transY,
+		opacity: 0,
+		duration: 0	
+		});
 
 myTimeline
 	.add({
 	targets:'#lbWelcome',
 	translateY: transY+5,
 	opacity: 1,
-	duration: 500,
+	duration: 600,
 	elasticity: 0
 	})
 	.add({
 	targets:'#cdLogin',
 	translateY: 5,
 	opacity: 1,
-	duration: 500,
+	duration: 300,
 	elasticity: 0
 	})
 	.add({
 	targets:'#lbLogin',
 	translateY: -transY,
 	opacity: 1,
-	duration: 500,
+	duration: 300,
 	elasticity: 0
 	})
 	.add({
 	targets:'#cdEmailPass',
 	translateY: -transY,
 	opacity: 1,
-	duration: 500,
+	duration: 300,
 	elasticity: 0
 	})
 	.add({
 	targets:'#btnLogin',
 	translateY: -transY,
 	opacity: 1,
-	duration: 500,
+	duration: 300,
 	elasticity: 0
-	});
+	})
+	.add({
+		targets:'#btnCadastrar',
+		translateY: -transY,
+		opacity: 1,
+		duration: 300,
+		elasticity: 0
+		});
 
 anime.timeline();
 	
+
 
 
 

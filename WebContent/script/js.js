@@ -34,3 +34,29 @@ $("#btnLogin").on("click", function () {
   }
 
 });
+$("#btnCadastro").on("click", function () {
+	fadeOutA("#dvLogin", function() {
+		$("#dvLogin").css("display", "none");
+		$("#dvSignUp").css("display", "flex");
+		fadeInA("dvSign", function (){
+			
+		});
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

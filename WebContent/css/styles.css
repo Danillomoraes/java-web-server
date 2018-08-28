@@ -52,8 +52,10 @@ h3{
   margin: 0 auto;
 }
 #lbLogin{
-  visibility:hidden;
   -vendor-animation-duration: 0.1s
+}
+#dvSignUp{
+	display:none;
 }
 
 

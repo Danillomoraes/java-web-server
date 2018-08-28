@@ -20,6 +20,7 @@
   <body class="text-center bg">
     <form class="form-signin">
       <h3 id="lbWelcome" class="text-center font-white">Welcome to Danillom's Site</h3>
+      <div id="dvLogin">
       <div id="cdLogin" class="card">
         <div class="card-body">
           <div class="mt-3 mb3"> 
@@ -32,7 +33,24 @@
           <input type="password" id="txtPass" class="form-control" placeholder="Senha"/>
           </div>
           <button id ="btnLogin" type= "button" class="btn btn-lg btn-block btn-logar">Logar</button>
+          <button id ="btnCadastrar" type= "button" class="btn btn-lg btn-block btn-logar">Cadastrar</button>
         </div> 
+      </div>	
+      </div>      
+      <div id="dvSignUp">
+      <div id="cdSignUp" class="card" >
+      	<div class="card-body">
+      		<h4 id="lbSignUp" class="text-center">Sign Up</h4>
+      		<div id="cdSignUpTxt">
+      			<input type="text" id="txtUsername" class="form-control" placeholder="Username" />
+          		<input type="email" id="txtEmailS" class="form-control" placeholder="email"/>
+          		<input type="password" id="txtPassS" class="form-control" placeholder="Senha"/>	
+      			<input type="password" id="txtPassV" class="form-control" placeholder="Confirmar Senha"/>	      			
+      			<button id ="btnCadastro" type= "button" class="btn btn-lg btn-block btn-logar">Cadastrar</button>
+				<button id ="btnVoltar" type= "button" class="btn btn-lg btn-block btn-logar">Voltar</button>
+      		</div>
+      	</div>
+      </div>
       </div>
       </div> 
     </div>
