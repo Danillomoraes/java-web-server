@@ -18,8 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head> 
   <body class="text-center bg">
-    <form class="form-signin">
-      <h3 id="lbWelcome" class="text-center font-white">Welcome to Danillom's Site</h3>
+   <form class="form-signin">    
+   <h3 id="lbWelcome" class="text-center font-white">Welcome to Danillom's Site</h3>
       <div id="dvLogin">
       <div id="cdLogin" class="card">
         <div class="card-body">
@@ -39,7 +39,7 @@
       </div>      
       <div id="dvSignUp">
       <div id="cdSignUp" class="card" >
-      	<div class="card-body">
+      	<div class="card-body mt-3 mb3">
       		<h4 id="lbSignUp" class="text-center">Sign Up</h4>
       		<div id="cdSignUpTxt">
       			<input type="text" id="txtUsername" class="form-control" placeholder="Username" />
@@ -52,6 +52,7 @@
       	</div>
       </div>
       </div>
+      </form>
       </div> 
     </div>
   </div>

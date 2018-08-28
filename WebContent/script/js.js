@@ -6,9 +6,7 @@ $("#btnLogin").on("click", function () {
     email: email,
     password: pass
   };
-  
-  
-  
+    
   var dataS = `email=${email}&password=${pass}`
 
   if (email && pass) {
@@ -34,29 +32,11 @@ $("#btnLogin").on("click", function () {
   }
 
 });
-$("#btnCadastro").on("click", function () {
-	fadeOutA("#dvLogin", function() {
-		$("#dvLogin").css("display", "none");
-		$("#dvSignUp").css("display", "flex");
-		fadeInA("dvSign", function (){
-			
-		});
-	});
+
+$("#btnCadastrar").on("click", function () {
+	fadeOutA("#dvLogin", "#dvSignUp");
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$("#btnVoltar").on("click", function () {
+	fadeOutA("#dvSignUp", "#dvLogin");
+});

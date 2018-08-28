@@ -45,12 +45,19 @@ h3{
 .btn-logar:hover{
   background-color: #5B5150;
 }
-.form-signin {
+.dvLogin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
+.dvSignUp {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
 #lbLogin{
   -vendor-animation-duration: 0.1s
 }

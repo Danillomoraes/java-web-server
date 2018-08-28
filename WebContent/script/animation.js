@@ -41,25 +41,24 @@
 
 var transY = 10;
 
-var fadeOutA = function(el, callback) {
+var fadeOutA = function(elOne, elTwo) {
 	anime({
-		targets:el,
+		targets:elOne,
 		translateY: -transY,
 		opacity: 0,
 		duration: 500,
-		complete: callback()
+		complete: function() {
+			$(elOne).css("display", "none");
+			$(elTwo).css("display", "block");
+			anime({
+				targets: elTwo,
+				translateY: transY,
+				opacity: 1,
+				duration: 500,				
+			})
+		}
 	});	
 };
-
-var fadeInA = function (el, callback) {
-	anime({
-		targets: el,
-		translateY: transY,
-		opacity: 1,
-		duration: 500,
-		complete: callback()	
-	})
-}
 
 var myTimeline = anime.timeline({
 	diretion: 'alternative'
@@ -146,8 +145,8 @@ myTimeline
 		elasticity: 0
 		});
 
-anime.timeline();
-	
+anime.timeline();	
+
 
 
 
