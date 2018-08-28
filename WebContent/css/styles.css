@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  display: block;
+}
+body {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  /* -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center; */
+  align-items: center;
+  /* -webkit-box-pack: center; */
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.bg {
+    background-color: #567B83;
+    height: 100%;
+}
+h3{
+  color: #ffffff;
+}
+.font-white {
+  color: white;
+}
+.blue {
+  background-color: blue;
+}
+.black{
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.white {
+  background-color: white;
+}
+.btn-logar{
+  background-color: #39AEA8;
+  padding: 1.25rem;
+}
+.btn-logar:hover{
+  background-color: #5B5150;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+#lbLogin{
+  visibility:hidden;
+  -vendor-animation-duration: 0.1s
+}
+
+
